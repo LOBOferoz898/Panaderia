@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Croissant",
+        "ingredientes": "harina de trigo, agua, sal, azucar, levadura y se suele usar la mantequilla como grasa.",
+        "precio": "$450",
+        "imagen":"assets/imagenes/croissant.jpg",
+        "alt":"Croissant",
+        "funcion_atributos": "add('Croissant',450 )"
+    },
+    {
+        "nombre": "Donas",
+        "ingredientes": "Harina de trigo, azucar, mantequilla, entre otros",
+        "precio": "$900",
+        "imagen":"assets/imagenes/donas.jpg",
+        "alt":"Donas",
+        "funcion_atributos": "add('Donas',900 )"
+    },
+    {
+        "nombre": "Pan",
+        "ingredientes": "Pan clasico",
+        "precio": "$600",
+        "imagen":"assets/imagenes/pan.jpg",
+        "alt":"Pan",
+        "funcion_atributos": "add('Pan',600 )"
+    },
+    {
+        "nombre": "Pan Frances",
+        "ingredientes": "Harina, Sal, Levadura seca, azucar, entre otros",
+        "precio": "$800",
+        "imagen":"assets/imagenes/panFrances.jpg",
+        "alt":"Pan Frances",
+        "funcion_atributos": "add('Pan Frances',800 )"
+    },
+    {
+        "nombre": "Torta",
+        "ingredientes": "Bañada en chocolate, ideal para celebraciones",
+        "precio": "$5000",
+        "imagen":"assets/imagenes/torta.jpg",
+        "alt":"Torta",
+        "funcion_atributos": "add('Torta',5000)"
+    }
+]
