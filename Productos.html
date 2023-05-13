@@ -40,21 +40,25 @@
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" placeholder="">
                           </div>
-                          <div class="form-group">
-                            <label for="validationCustom02" class="form-label">Apellido paterno</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="" required>
-                            <div class="valid-feedback">
-                              Looks good!
-                            </div>
+                          <div id='error-nombre' class="alert alert-danger d-none" role="alert">
+                            Ingrese correctamente
                           </div>
                           <div class="form-group">
-                            <label for="validationCustom02" class="form-label">Apellido materno</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="" required>
-                            <div class="valid-feedback">
-                              Looks good!
-                            </div>
+                            <label for="apellido-p" class="form-label">Apellido paterno</label>
+                            <input type="text" class="form-control" id="apellido-p" value="" required>
+                          </div>
+                          <div id='error-appaterno' class="alert alert-danger d-none" role="alert">
+                            Ingrese correctamente
+                          </div>
+                          <div class="form-group">
+                            <label for="apellido-m" class="form-label">Apellido materno</label>
+                            <input type="text" class="form-control" id="apellido-m" value="" required>
+                          </div>
+                          <div id='error-apmaterno' class="alert alert-danger d-none" role="alert">
+                            Ingrese correctamente 
                           </div>
                         </div>
+                        
                         
                         <div class="contacto-form">
                           <header>
@@ -62,34 +66,55 @@
                           </header>
                           <div class="form-group">
                             <div class="mb-3">
-                              <label for="exampleFormControlInput1" class="form-label">Gmail</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                              <label for="email" class="form-label">Gmail</label>
+                              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
                             </div>
+                          </div>
+                          <div id='error-email' class="alert alert-danger d-none" role="alert">
+                            email incorrecto
                           </div>
                           <div class="form-group">
                             <label for="telefono">Telefono</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="">
+                            <input type="tel" class="form-control" id="telefono" placeholder="(+569) 99999999">
+
+                          </div>
+                          <div id='error-telefono' class="alert alert-danger d-none" role="alert">
+                            formato celular incorrecto
                           </div>
                         </div>
-
+                        
                         <div class="Direccion-form">
                           <header>
                             <h1>Direccion</h1>
                           </header>
                           <div class="form-group">
                             <div class="mb-3">
-                              <label for="exampleFormControlInput1" class="form-label">Direccion</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ej: Anibal Pinto 1393">
+                              <label for="direccion" class="form-label">Direccion</label>
+                              <input type="email" class="form-control" id="direccion" placeholder="ej: Anibal Pinto 1393">
                             </div>
                           </div>
-                          <div class="form-group">
-                            <label for="telefono">Comuna</label>
-                            <input type="tel" class="form-control" id="comuna" placeholder="">
+
+                          <div id='error-direccion' class="alert alert-danger d-none" role="alert">
+                            campo obligatorio
                           </div>
+
                           <div class="form-group">
-                            <label for="telefono">Ciudad</label>
+                            <label for="comuna">Comuna</label>
+                            <input type="tel" class="form-control" id="comuna" placeholder="" >
+                          </div>
+
+                          <div id='error-comuna' class="alert alert-danger d-none" role="alert">
+                            campo obligatorio
+                          </div>
+
+                          <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
                             <input type="tel" class="form-control" id="ciudad" placeholder="">
                           </div>
+                          <div id='error-ciudad' class="alert alert-danger d-none" role="alert">
+                            campo obligatorio
+                          </div>
+
                         </div>
                     
                         <div class="Mpago-content">
@@ -117,8 +142,8 @@
                         
 
                         <div class="form-group">
-                          <label for="mensaje">Mensaje:</label>
-                          <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                          
+                          <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje (opcional)"></textarea>
                         </div>
                       </form>
           
@@ -170,6 +195,7 @@
       <script src="assets/js/jquery/jquery-3.6.4.min.js"></script>
       <script src="assets/js/CustomNavBar.js"></script>
       <script src="assets/js/loadProductos.js"></script>
+      <script src="assets/js/val_data_forms.js"></script>
 
 </body>
 </html>

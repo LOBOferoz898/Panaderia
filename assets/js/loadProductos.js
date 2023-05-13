@@ -6,6 +6,8 @@ function loadProducts(){
 
         const url = 'http://127.0.0.1:5500/assets/data.json';
 
+        //http://127.0.0.1:5500/assets/data.json  <= puerto del duoc
+        
         const resp = fetch(url)
         .then((response) => {
             /* VALIDACIÓN RESPUESTA RECURSO */
