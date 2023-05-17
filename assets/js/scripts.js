@@ -66,6 +66,7 @@ function listar_productos(){
     <td>${prodcuts[i][0]}</td>
     <td>${prodcuts[i][1]}</td>
     <td>$${prodcuts[i][2]}</td>
+    <td><button id="agregar-${prodcuts[i][0]}" button type="button" class="btn btn-success" >AGREGAR</button></td>
     <td><button id="quitar-${prodcuts[i][0]}" type="button" class="btn btn-danger" onclick="eliminar_producto('${prodcuts[i][0]}'),ver_carrito()">QUITAR</button></td>
     </tr>
     `;

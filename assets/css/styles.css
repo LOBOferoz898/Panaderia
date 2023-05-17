@@ -180,6 +180,14 @@ footer{
     
 }
 
+.modal-body{
+    background-color:  rgba(171, 211, 245, 0.39);
+}
+
+.modal-footer{
+    background-color: #000000;
+}
+
 .modal-content{
     border: 2px solid #000000;
     
@@ -194,14 +202,14 @@ footer{
     text-align: center;
     border-radius: 40px;
     padding: 7px 50px;
-    background-color: white;
+    background-color: rgba(245, 240, 171, 0.534);
     color: black;
-    border: 2px solid  rgba(5, 5, 5, 0.39);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition-duration: 0.6s;
     right: 15px;
 }
 .datos-personales:hover{
-    background-color: rgb(233, 162, 162);
+    background-color: #ebe487;
     color: rgb(0, 0, 0);
 }
 
@@ -211,16 +219,33 @@ footer{
     text-align: center;
     border-radius: 40px;
     padding: 7px 50px;
-    background-color: white;
+    background-color: rgba(245, 240, 171, 0.534);
     color: black;
-    border: 2px solid  rgba(5, 5, 5, 0.39);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition-duration: 0.6s;
     right: 15px;
     margin-top: 15px;
 }
 .contacto-form:hover{
-    background-color:#ebe487;
+    background-color: #ebe487;
     color: rgb(0, 0, 0);
+}
+
+.datos-pago{
+    border: none;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 7px 50px;
+    background-color: rgba(71, 71, 71, 0.219);
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.6s;
+    right: 15px;
+}
+.datos-pago:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .Direccion-form{
@@ -229,15 +254,15 @@ footer{
     text-align: center;
     border-radius: 40px;
     padding: 7px 50px;
-    background-color: white;
+    background-color: rgba(245, 240, 171, 0.534);
     color: black;
-    border: 2px solid  rgba(5, 5, 5, 0.39);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition-duration: 0.6s;
     right: 15px;
     margin-top: 15px;
 }
 .Direccion-form:hover{
-    background-color:rgba(171, 211, 245, 0.548);
+    background-color: #ebe487;
     color: rgb(0, 0, 0);
 }
 
@@ -261,9 +286,10 @@ footer{
     text-align: center;
     border-radius: 15px;
     padding: 7px 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(71, 71, 71, 0.219);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     color: rgb(0, 0, 0);
-    border: 2px solid  rgba(5, 5, 5, 0.39);
+   
     transition-duration: 0.9s;
     right: 15px;
     margin-top: 15px;
@@ -292,5 +318,11 @@ footer{
 
 .tabla-carrito{
     border-radius: 15px;
-    background-color: rgba(171, 211, 245, 0.39);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgba(245, 240, 171, 0.534);
+}
+
+#mensaje{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgba(245, 240, 171, 0.534);;
 }

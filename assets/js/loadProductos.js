@@ -51,3 +51,46 @@ function loadProducts(){
 loadProducts();
 
 $("#checkout").removeClass("d-none");
+
+$("#btn-hacer-pedido").on("click", function(){
+
+    $("#Datos-pago").removeClass("d-none")
+
+});
+
+function DatosPago() {
+    var casilla1 = document.getElementById("flexRadioDefault1");
+    var casilla2 = document.getElementById("flexRadioDefault2");
+    
+    if (casilla1.checked) {
+     
+
+      $("#Datos-pago").removeClass("d-none")
+     
+    } else if (casilla2.checked) {
+
+        $("#Datos-pago").addClass("d-none")
+
+    }else  {
+
+        console.log("No se esta imprimiendo nada")
+
+    }
+
+
+  }
+
+
+$("#flexRadioDefault1").on("click",function(){
+
+    DatosPago();
+
+
+});
+
+$("#flexRadioDefault2").on("click",function(){
+
+    DatosPago();
+
+
+});

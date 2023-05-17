@@ -34,7 +34,7 @@
                       <form >
                         <div class="datos-personales">
                           <header>
-                            <h1>Datos Personales</h1>
+                            <h1><i class="bi bi-person-fill"></i>Datos Personales</h1>
                           </header>
                           <div class="form-group">
                             <label for="nombre">Nombre</label>
@@ -62,7 +62,7 @@
                         
                         <div class="contacto-form">
                           <header>
-                            <h1>Contacto</h1>
+                            <h1><i class="bi bi-person-lines-fill">Contacto</i></h1>
                           </header>
                           <div class="form-group">
                             <div class="mb-3">
@@ -85,7 +85,7 @@
                         
                         <div class="Direccion-form">
                           <header>
-                            <h1>Direccion</h1>
+                            <h1><i class="bi bi-geo-alt-fill"></i>Direccion</h1>
                           </header>
                           <div class="form-group">
                             <div class="mb-3">
@@ -139,7 +139,37 @@
                             </div>
                         </div>
                           
+                        <!-- Inicio modal body de datos pago(Parte sergio)-->
                         
+                          
+                            <div class="datos-pago d-none" id="Datos-pago">
+                              <header>
+                                <h1><span class="mx-100 fs-30"><i class="bi bi-credit-card"></i></span></h1>
+                              </header>
+                              <div class="form-group">
+                                <label for="numero_tarjeta">Numero de tarjeta</label>
+                                <input type="text" class="form-control" id="numero_tarjeta"  placeholder="0000 0000 0000 0000">
+                              </div>
+                              <div class="form-group">
+                                <label for="codigo_seguridad" class="form-label">Codigo de seguridad</label>
+                                <input type="number" class="form-control" id="validationCustom02" maxlength="3" placeholder="000" required>
+                                <div class="form-group">
+                                  <label for="fecha_vencimiento">Fecha de vencimiento</label>
+                                  <input type="text" class="form-control" id="validationCustom02" placeholder="00/00" required>
+                                  <div class="form-group">
+                                    <label for="nombre_titular">Titular de la tarjeta</label>
+                                    <input type="text" class="form-control" id="validationCustom02" required>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+
+                                  </div>
+                                
+
+                                </div>
+                              </div>
+                            </div>
+                        <!-- final modal body de datos pago-->
 
                         <div class="form-group">
                           
